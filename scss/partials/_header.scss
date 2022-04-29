@@ -1,0 +1,88 @@
+$colorbg: white;
+$color: rgb(229, 199, 160);
+$widthheader: 100%;
+$heightheader: 100px;
+$height: 100px + 200px;
+$fontfamily: verdana;
+$width: 650px;
+$widthdiv:450px;
+$border-radious: 7px;
+$displayflex:flex;
+$justify-content:space-evenly;
+$text-decoration: none;
+body{
+    background-color:$colorbg;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: $color;
+    width: $widthheader;
+    height: $heightheader;
+    nav{
+        text-align: center;
+        display: $displayflex;
+        justify-content: $justify-content;
+        a{
+            font-family: $fontfamily;
+            text-decoration: $text-decoration;
+            color: $colorbg;
+            margin-top: 30px;
+            &:hover{
+                color:black;
+            }
+        }
+    }
+}
+
+h1{
+    text-align: center;
+    font-family:$fontfamily;
+}
+main{
+    display: $displayflex;
+    justify-content: $justify-content;
+}
+div{
+    background-color: $color;
+    height: $height ;
+    text-align: center;
+    width: $widthdiv;
+    border-radius: $border-radious;
+    p{
+        margin: 20px;
+        font-family: $fontfamily;
+    }
+}
+section{
+    margin-top: 60px;
+}
+img{
+    margin-bottom: 200px;
+    width: $width;
+    border-radius: $border-radious;
+}
+footer{
+    background-color: $color;
+    height: $height;
+    ul{
+        li{
+            display: flex ;
+            justify-content: $justify-content;
+            a{
+                margin-top: 50px;
+                text-decoration: $text-decoration;
+                font-family: $fontfamily;
+                color: $colorbg;
+            }
+            img{
+                display: flex;
+                flex-direction: $justify-content;
+                margin-top: 60px;
+                width: 50px;
+                height: 50px;
+
+            }
+        }
+    }
+}
